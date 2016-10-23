@@ -33,6 +33,7 @@ controller.hears("WOOF", ['direct_message','ambient'], function(bot, message) {
 controller.hears([/[A-Z][A-Z0-9]+-[0-9]+/g], ['direct_message','ambient'], function(bot, message) {
   if(message.match.length > 1) {
     bot.reply(message, "You mentioned more than one issue. I'm not smart enough to handle that yet.");
+    return false;
   }
 
   let issueID = message.match[0];
