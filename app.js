@@ -31,7 +31,7 @@ controller.hears("WOOF", ['direct_message','ambient'], function(bot, message) {
 // Answer to mentions of string formatted like Jira issue ID
 // Responds in DM or participating channel
 controller.hears([/[A-Z][A-Z0-9]+-[0-9]+/g], ['direct_message','ambient'], function(bot, message) {
-  if(message.match.length < 1) {
+  if(message.match.length > 1) {
     bot.reply(message, "You mentioned more than one issue. I'm not smart enough to handle that yet.");
   }
 
