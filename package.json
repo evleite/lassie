@@ -1,0 +1,32 @@
+{
+  "name": "lassie",
+  "version": "0.0.1",
+  "description": "Slack bot that listens for mentions of Jira issues.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanahern/lassie.git"
+  },
+  "keywords": [
+    "slack",
+    "jira"
+  ],
+  "author": "Sean Ahern",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanahern/lassie/issues"
+  },
+  "homepage": "https://github.com/seanahern/lassie#readme",
+  "devDependencies": {
+    "botkit": "^0.2.2",
+    "dotenv": "^2.0.0",
+    "jira": "^0.9.2"
+  },
+  "dependencies": {
+    "jira-connector": "^2.3.0"
+  }
+}
